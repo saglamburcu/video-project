@@ -4,8 +4,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
 }
-
 
 .pre-loader {
   background-color: #fff;
@@ -18,18 +18,16 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 100;
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
 
 .hidden-preloader {
   z-index: -10;
   visibility: hidden;
-  
 }
 
 .video-container {
   position: relative;
-
 }
 
 .video-container video {
@@ -87,8 +85,13 @@ h1 {
   width: 50%;
   height: 100%;
   background-color: rgb(88, 150, 221);
-  position: absolute; /*kendisini button-containerın içindeki butona göre konumlandırdı.*/
+  position: absolute; 
   top: 0;
   left: 0;
   border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.switch-right {
+  left: 50%;
 }
